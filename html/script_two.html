@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="../images/Papirus-Team-Papirus-Apps-Emerald-theme-manager-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/script.css">
+    <title>Задача 2</title>
+</head>
+<body >
+    <div></div><div class="title">Задача №2</div>
+    
+
+<form>
+     <p>Введите пароль, чтобы увидеть решение</p>
+  <input type="password" id="password" />
+  <button type="submit">Открыть доступ к решению</button>
+</form>
+<div id="message" style="display: none;"> 
+    <div class="subtitle">Пример</div>   
+    <div id="pre" class="container"><pre > Напишите обработку любой строки, на определение того, есть ли ключевое слово в данной строке, не зависимо от регистра.
+
+function task_two() {
+  let text = prompt("Введите текст для анализа");
+  let word = prompt("Введите слово для поиска");
+
+  let regexp = new RegExp(word, "gi");
+  let matches = text.match(regexp);
+  alert(`Ваш текст: ${text}\nСлово "${word}" найдено ${matches.length} раз(а)`);
+}</div>
+
+<script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const password = document.querySelector('#password').value;
+
+    if (password === '12345') {
+      form.style.display = 'none';
+
+      const message = document.querySelector('#message');
+
+      message.style.display = 'block';
+    } else {
+      alert('Пароль неверный');
+    }  
+  });  
+</script>
+</body>
+</html>

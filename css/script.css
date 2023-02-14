@@ -1,0 +1,10 @@
+pre {
+    white-space: pre-wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+button:hover {
+cursor: pointer;
+}
+.title {}
+.subtitle {}

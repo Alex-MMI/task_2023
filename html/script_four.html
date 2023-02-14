@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="../images/Papirus-Team-Papirus-Apps-Emerald-theme-manager-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/script.css">
+    <title>Задача 4</title>
+</head>
+<body >
+    <div></div><div class="title">Задача №4</div>
+    
+
+<form>
+     <p>Введите пароль, чтобы увидеть решение</p>
+  <input type="password" id="password" />
+  <button type="submit">Открыть доступ к решению</button>
+</form>
+<div id="message" style="display: none;"> 
+    <div class="subtitle">Пример</div>   
+    <div id="pre" class="container"><pre >  Напишите автокорректор. Есть массив запрщенных слов (3-4 штуки хватит). Нужно определить есть ли в строчке, запрещенноё слово, и если есть, тогда заменить его на слово "коты"
+       
+  let badWords = ["жесть", "капец", "кровь"];
+  let string = prompt(
+    "Введите текст\nВнимание!!! Запрещенные слова: жесть, капец, кровь"
+  );
+
+  let newString = string
+    .toLowerCase()
+    .split(" ")
+    .map((word) => {
+      if (badWords.includes(word)) {
+        return "коты";
+      } else {
+        return word;
+      }
+    })
+    .join(" ");
+  alert(newString);
+}
+</div>
+
+<script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const password = document.querySelector('#password').value;
+
+    if (password === '12345') {
+      form.style.display = 'none';
+
+      const message = document.querySelector('#message');
+
+      message.style.display = 'block';
+    } else {
+      alert('Пароль неверный');
+    }  
+  });  
+</script>
+</body>
+</html>

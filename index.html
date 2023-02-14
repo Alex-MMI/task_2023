@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/Papirus-Team-Papirus-Apps-Emerald-theme-manager-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Задачи</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Задачи</div>
+      <div class="tasks">
+        <div class="tasks__width">
+          <button onclick="task_one ()">Задача №1</button>
+          <div>
+            <details class="details-one">
+              <summary>Пояснение</summary>
+              Преобразовать строку (можете сами задать), нижнего регистра в
+              строку с верхним регистром, строку с первой заглавной и строку с
+              последней заглавной буквой
+            </details>
+          </div>
+          <div>
+            <a href="./html/script_one.html" target="_ blank"
+              ><button class="btn-color">Показать решение</button></a
+            >
+          </div>
+        </div>
+        <div class="tasks__width">
+          <button onclick="task_two ()">Задача №2</button>
+          <div class="width">
+            <details class="details-one">
+              <summary>Пояснение</summary>
+              Напишите обработку любой строки, на определение того, есть ли
+              ключевое слово в данной строке, не зависимо от регистра.
+            </details>
+          </div>
+          <div>
+            <a href="./html/script_two.html" target="_ blank"
+              ><button class="btn-color">Показать решение</button></a
+            >
+          </div>
+        </div>
+        <div class="tasks__width">
+          <button onclick="task_three ()">Задача №3</button>
+          <div class="width">
+            <details class="details-one">
+              <summary>Пояснение</summary>
+              Напишите ограничитель символов. Если длина строки больше чем 50
+              символов, ограничьте её до 47 символов, еще три символа сделайте
+              точками, остальное обрезайте
+            </details>
+          </div>
+          <div>
+            <a href="./html/script_three.html" target="_ blank"
+              ><button class="btn-color">Показать решение</button></a
+            >
+          </div>
+        </div>
+        <div class="tasks__width">
+          <button onclick="task_four ()">Задача №4</button>
+          <div class="width">
+            <details class="details-one">
+              <summary>Пояснение</summary>
+              Напишите автокорректор. Есть массив запрщенных слов (3-4 штуки
+              хватит). Нужно определить есть ли в строчке, запрещенноё слово, и
+              если есть, тогда заменить его на слово "коты"
+            </details>
+          </div>
+          <div>
+            <a href="./html/script_four.html" target="_ blank"
+              ><button class="btn-color">Показать решение</button></a
+            >
+          </div>
+        </div>
+        <div class="tasks__width">
+          <button onclick="task_five ()">Задача №5</button>
+          <div class="width">
+            <details class="details-one">
+              <summary>Пояснение</summary>
+              Дополнение к 4 задаче. Если слово запрещенноё есть, тогда
+              предупредить юзера и спросить на какое слово заменить.
+            </details>
+          </div>
+          <div>
+            <a href="./html/script_five.html" target="_ blank"
+              ><button class="btn-color">Показать решение</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script_one.js"></script>
+    <script src="./js/script_two.js"></script>
+    <script src="./js/script_three.js"></script>
+    <script src="./js/script_four.js"></script>
+    <script src="./js/script_five.js"></script>
+  </body>
+</html>
